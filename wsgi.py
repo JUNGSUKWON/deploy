@@ -3,12 +3,13 @@
 wsgi기능은 서버기능을 제공하는 역활
 '''
 import sys, os
-
+from run import app as application
 cur_dir=os.getcwd()
 
 #웹은, 접속로그, 에러로그 존재
 #로그의 위치를 조정
-sys.stdout=sys.stderrs
-sys.paht.insert(0,cur_dir)
+sys.stdout=sys.stderr
+sys.path.insert(0,cur_dir)
 
-from run import app as application
+
+
