@@ -39,3 +39,13 @@ deploy
 # 잘 안된다!!
 - 소스코드상에, 파일명, 설정값등 오타가 없어야함
 - git에 최종 소스가 모드 반영되어야함
+- 리눅스에서 기존의 흔적을 모두 제거
+  현재위치: /home/ubuntu
+  프로젝트 삭제 :$ rm -r -f deploy
+  숨김 파일 확인
+
+  $ ls -a
+  가상환경 삭제
+  $ rm -r -f .virtualenvs
+- 로컬 PC
+  $ fab new_server
